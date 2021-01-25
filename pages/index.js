@@ -1,16 +1,18 @@
 import styled from 'styled-components'
 
-import Widget from '../src/components/widget'
+import Widget from '../src/components/Widget'
 import DivBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/footer'
-import divasImg from '../assets/divas.svg'
-import GitHubCorner from '../src/components/gitHubCorner'
+import QuizLogo from '../src/components/QuizLogo'
+import Footer from '../src/components/Footer'
+import GitHubCorner from '../src/components/GitHubCorner'
+
+import avengersImg from '../assets/avengers.png'
 
 
-const LogoImg = styled.img`
+const QuizImg = styled.img`
   position: fixed;
-  right: 0;
-  bottom: 10px;
+  right: 20px;
+  bottom: 20px;
   width: max(40vw, 200px);
   height: (40vh, 200px);
 `
@@ -30,12 +32,13 @@ export default function Home() {
   return (
     <DivBackground>
       <QuizContainer>
+        <QuizLogo/>
         <Widget>
           <Widget.Header>
-            <h1>Quiz das Divas</h1>
+            <h1>Quiz Conhecimentos Malucos</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Faça o quiz e descubra o quanto você conhece do nosso grupo de amigas</p>
+            <p>Perguntas malucas e respostas mais ainda</p>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -49,7 +52,7 @@ export default function Home() {
         <Footer/>
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/Fernanda-Kipper/Alura-Quiz-NextJS"></GitHubCorner>
-      <LogoImg src={divasImg} alt=""/>
+      <QuizImg src={avengersImg} alt=""/>
     </DivBackground>
   )
 }

@@ -1,15 +1,15 @@
 {
-    "title": "Quiz das Divas",
-    "description": "Teste os seus conhecimentos sobre as Divas - grupo de amigas de Rio Grande",
+    "title": "Quiz Conhecimentos Malucos",
+    "description": "Acha que sabe diversas informaçãoes malucas sobre várias áreas do conhecimento? Sim? Faça o quiz e descubra",
     "questions": [],
     "external": [
       ""
     ],
     "theme": {
       "colors": {
-        "primary": "#6779E4",
-        "secondary": "#E36381",
-        "mainBg": " #7485E7",
+        "primary": "#7485E7",
+        "secondary": "#7485E7",
+        "mainBg": " #DCD9E9",
         "contrastText": "#FFFFFF",
         "wrong": "#CF244D",
         "success": "#B0F557"

@@ -12,13 +12,13 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
   p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   a {
     color: white;
     text-decoration: none;
     transition: .3s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     &:hover,
     &:focus {
       opacity: .5;

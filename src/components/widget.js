@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const Widget = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -11,16 +12,16 @@ const Widget = styled.div`
   overflow: hidden;
   h1{
     font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 400;
     line-height: 22px;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   p {
     font-size: 14px;
-    font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
   }
 `;
 
