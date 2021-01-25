@@ -1,0 +1,19 @@
+{
+    "title": "Quiz das Divas",
+    "description": "Teste os seus conhecimentos sobre as Divas - grupo de amigas de Rio Grande",
+    "questions": [],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#6779E4",
+        "secondary": "#E36381",
+        "mainBg": " #7485E7",
+        "contrastText": "#FFFFFF",
+        "wrong": "#CF244D",
+        "success": "#B0F557"
+      },
+      "borderRadius": "4px"
+    }
+  }
