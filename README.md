@@ -1,2 +1,2 @@
 
-## Alura Quiz - Conhecimentos Malucos e Aleatórios
+## Alura Quiz
