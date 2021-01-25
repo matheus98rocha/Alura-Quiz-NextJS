@@ -11,11 +11,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat';
     color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
+    margin: 0;
   }
   #__next {
     flex: 1;
