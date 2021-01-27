@@ -7,9 +7,9 @@
     ],
     "theme": {
       "colors": {
+        "mainBg": "#B6C0FF",
+        "secondary": "#324695",
         "primary": "#7485E7",
-        "secondary": "#7485E7",
-        "mainBg": " #DCD9E9",
         "contrastText": "#FFFFFF",
         "wrong": "#CF244D",
         "success": "#B0F557"

@@ -6,24 +6,26 @@ const Widget = styled.div`
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
+    return theme.colors.mainBg
   }};
   border-radius: 4px;
   overflow: hidden;
   h1{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 22px;
     margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
   }
   p {
     font-size: 14px;
-    font-weight: 200;
-    color: #000;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
   }
-`;
+`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
@@ -37,7 +39,7 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
-`;
+`
 
 Widget.Header = styled.header`
   display: flex;
@@ -49,6 +51,6 @@ Widget.Header = styled.header`
   * {
     margin: 0;
   }
-`;
+`
 
-export default Widget;
+export default Widget

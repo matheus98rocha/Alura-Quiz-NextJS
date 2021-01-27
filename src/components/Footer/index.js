@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const FooterWrapper = styled.footer`
@@ -12,13 +13,13 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
   p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
   a {
     color: white;
     text-decoration: none;
     transition: .3s;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     &:hover,
     &:focus {
       opacity: .5;
@@ -27,9 +28,9 @@ const FooterWrapper = styled.footer`
       text-decoration: underline;
     }
   }
-`;
+`
 
-export default function Footer(props) {
+export default function Footer (props) {
   return (
     <FooterWrapper {...props}>
       <a href="https://www.alura.com.br/">
@@ -45,5 +46,5 @@ export default function Footer(props) {
         </a>
       </p>
     </FooterWrapper>
-  );
+  )
 }
