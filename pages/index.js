@@ -37,7 +37,7 @@ const Form = styled.form`
   justify-content: center;
 `
 const Button = styled.button`
-  min-width: 200px;
+  min-width: 250px;
   background-color: ${({ theme }) => {
     return theme.colors.secondary
   }};
@@ -54,8 +54,13 @@ const Input = styled.input`
   border: 1px solid ${({ theme }) => { return theme.colors.primary }};
   border-radius: 5px;
   padding: 10px;
-  min-width: 200px;
-  background: #fff;
+  min-width: 250px;
+  background: none;
+  color: #fff;
+
+  ::placeholder{
+    color: #fff;
+  }
 `
 
 export default function Home () {
@@ -86,7 +91,7 @@ export default function Home () {
           <Footer/>
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/Fernanda-Kipper/Alura-Quiz-NextJS"></GitHubCorner>
-        <Slide direction="up" in={true} timeout={1500}>
+        <Slide direction="down" in={true} timeout={1500}>
           <QuizImg src={avengersImg} alt=""/>
         </Slide>
     </DivBackground>

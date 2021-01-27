@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FooterWrapper = styled.footer`
-  background-color: #B6C0FF;
+  background-color: ${({ theme }) => theme.colors.mainBg};
   opacity: 0.9;
   padding: 20px;
   display: flex;
