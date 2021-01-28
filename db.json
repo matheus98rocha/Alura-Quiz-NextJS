@@ -1,6 +1,6 @@
 {
-    "title": "Quiz Conhecimentos Malucos",
-    "description": "Acha que sabe diversas informaçãoes malucas sobre várias áreas do conhecimento? Sim? Faça o quiz e descubra",
+    "title": "Avengers Endgame",
+    "description": "Está pronto para testar seu conhecimento sobre o melhor filme da era marvel? Prepara o Mjölnir e vamo lá",
     "questions": [
       {
         "image": "https://i.ytimg.com/vi/OToL25oY3XU/maxresdefault.jpg",
@@ -40,7 +40,18 @@
       }
     ],
     "external": [
-      ""
+      {
+        "url": "https://aluraquiz.felipebeskow.vercel.app/",
+        "name": "Steven Universe do Felipe"
+      },
+      {
+        "url": "https://flash-quiz-next.davidlpc1.vercel.app/",
+        "name": "Flash Quiz do Davi"
+      },
+      {
+        "url": "https://aluraquiz-base-git-main.alura-challenges.vercel.app/",
+        "name": "Quiz de CSS da Alura"
+      }
     ],
     "theme": {
       "colors": {

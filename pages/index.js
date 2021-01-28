@@ -3,6 +3,8 @@ import Slide from '@material-ui/core/Slide'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
+import projectDb from '../db.json'
+
 import QuizContainer from '../src/components/QuizContainer'
 import Widget from '../src/components/Widget'
 import DivBackground from '../src/components/QuizBackground'
@@ -44,14 +46,24 @@ export default function Home () {
           <QuizLogo/>
           <Widget>
             <Widget.Header>
-              <h1>Avengers Endgame</h1>
+              <h1>{projectDb.title}</h1>
             </Widget.Header>
             <Widget.Content>
-              <p>Está pronto para testar seu conhecimento sobre o melhor filme da era marvel? Prepara o Mjölnir e vamo lá</p>
+              <p>{projectDb.description}</p>
               <Form onSubmit={handleSubmit}>
                 <Input placeholder="Diz seu nome para jogar :)" onChange={event => setName(event.target.value)} name="NomedoUsuário"></Input>
                 <Button type="submit" disabled={name.length === 0}> Bora Jogar {name} ?</Button>
               </Form>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Header>
+              <h1>Quizes da Galera</h1>
+            </Widget.Header>
+            <Widget.Content>
+              {projectDb.external.map(quiz => {
+                return (<Widget.Topic key={quiz.url} href={quiz.url}>{quiz.name}</Widget.Topic>)
+              })}
             </Widget.Content>
           </Widget>
           <Footer/>
