@@ -6,7 +6,7 @@
         "image": "https://i.ytimg.com/vi/OToL25oY3XU/maxresdefault.jpg",
         "title": "Vamos começar com uma fácil, quem salva Tony Stark no inicio do filme?",
         "description": "Tony e Nebula estavam vagando no espaço - consequências do final de Infinity War - sem oxigênio e gasolina para voltar para terra, mas alguém aparece",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
           "Thor",
           "Capitão América",
@@ -18,12 +18,24 @@
         "image": "https://www.tribernna.com/wp-content/uploads/2019/03/endgam.jpg",
         "title": "Qual personagem é responsável por finalmente falar o famoso 'Avengers, Assemble'",
         "description": "Toda fã da marvel esperou por essa frase ser dita por tanto tempo - e gritou bastante no cinema quando aconteceu",
-        "answer": 4,
+        "answer": 3,
         "alternatives": [
           "Tony Stark",
           "Thor",
           "Feiticeira Escarlate",
           "Capitão América"
+        ]
+      },
+      {
+        "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2019/02/thanos-vingadores-grassetti-1210x540.png",
+        "title": "Por que ao matar thanos no inicio do filme os problemas causados pelo estalo não foram resolvidos?",
+        "description": "Thor mata thanos nos primeiros minutos do filme, garanto que todos ficaram chocados no cinema, mas por que isso não resolveu todos os problemas que thanos tinha causado ao estalar os dedos no final de Guerra Infinita...?",
+        "answer": 0,
+        "alternatives": [
+          "Pois os vingadores precisavam das joias para reverter o estalo, mas thanos ja havia as destruído",
+          "Por que quem o Thor matou não era o Thano real",
+          "Por que Thanos, já sabendo o que estava por vir, tinha usado as joias para fingir sua morte",
+          "Por que não foi Thanos quem estalou os dedos para matar metade dos seres vivos"
         ]
       }
     ],

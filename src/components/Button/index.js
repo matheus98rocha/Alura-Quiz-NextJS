@@ -2,21 +2,28 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const Button = styled.button`
-  min-width: 250px;
-  background-color: ${({ theme }) => {
-    return theme.colors.secondary
-  }};
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 0;
+  width: 100%;
+  padding: 15px 16px;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  outline: 0;
+  transition: .3s;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 `
-
 Button.propTypes = {
   type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
   children: PropTypes.node.isRequired

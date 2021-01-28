@@ -9,3 +9,5 @@ Esse quiz foi desenvolvido durante a Imersão React da Alura com Next JS. O tema
 - Styled Components
 
 - Server Side Rendering
+
+- Lambda Functions

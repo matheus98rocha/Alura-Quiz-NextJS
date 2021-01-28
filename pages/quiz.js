@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import Slide from '@material-ui/core/Slide'
 
@@ -11,9 +12,9 @@ import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import GitHubCorner from '../src/components/GitHubCorner'
 import Button from '../src/components/Button'
+import AlternativesForm from '../src/components/AlternativesForm'
 
 import avengersImg from '../assets/avengersGroup.png'
-import loadingGif from '../assets/loading.gif'
 
 const QuizImg = styled.img`
   position: fixed;
@@ -33,20 +34,25 @@ function LoadingWidget () {
         <h1>Carregando...</h1>
       </Widget.Header>
       <Widget.Content>
-        <img src="https://media.giphy.com/media/5AtXMjjrTMwvK/giphy.gif" alt="Imagem de Carregamento" style={{ marginLeft: '80px', height: '120px'}}/>
+        <img src="https://media.giphy.com/media/5AtXMjjrTMwvK/giphy.gif" alt="Imagem de Carregamento" style={{ marginLeft: '80px', height: '120px' }}/>
       </Widget.Content>
     </Widget>
   )
 }
 
-function Result ({ totalQuestions }) {
+function Result ({ totalQuestions, result, name }) {
   return (
     <Widget>
     <Widget.Header>
-      <h1>Você acertou X de {totalQuestions}</h1>
+      <h1>Você acertou {result} de {totalQuestions}</h1>
     </Widget.Header>
     <Widget.Content>
-      Parece que você é um bom conhecedor do universo Marvel, principalmente dos Vingadores
+    {result > totalQuestions / 2
+      ? (
+      <h3>Parábens {`${name}`}! Você é um bom conhecedor do universo Marvel 🐱‍🏍</h3>
+        )
+      : <h3>Putss {`${name}`}! Prepara uma pipoca por que você vai ter que assistir o filme de novo 🍿</h3>
+    }
     </Widget.Content>
   </Widget>
   )
@@ -56,8 +62,13 @@ function QuestionWidget ({
   question,
   totalQuestions,
   questionIndex,
-  handleSubmit
+  handleSubmit,
+  addResults
 }) {
+  const [isFormSubmited, SetFormSubmted] = useState(false)
+  const [selectedAlternative, setSelectedAlternative] = useState()
+  const isCorrect = selectedAlternative === question.answer
+  const hasSelectedAlternatve = selectedAlternative !== undefined
   return (
     <Widget>
     <Widget.Header>
@@ -70,31 +81,45 @@ function QuestionWidget ({
     <Widget.Content>
       <h2>{question.title}</h2>
       <p>{question.description}</p>
-      <form
+      <AlternativesForm
       onSubmit={(infosDoEvento) => {
         infosDoEvento.preventDefault()
-        handleSubmit()
+        SetFormSubmted(true)
+        if (isCorrect) {
+          addResults()
+        }
+        setTimeout(() => {
+          handleSubmit()
+          SetFormSubmted(false)
+        }, 1000)
       }}
       >
         {question.alternatives.map((alternative, alternativeIndex) => {
           const alternativeId = `alternativa_${alternativeIndex}`
+          const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR'
+          const isSelected = selectedAlternative === alternativeIndex
           return (
             <Widget.Topic
             as="label"
             htmlFor={alternativeId}
             key={alternativeIndex}
+            data-selected={isSelected}
+            data-status={isFormSubmited && alternativeStatus}
           >
             <input
               id={alternativeId}
               name={questionIndex}
+              onChange={() => setSelectedAlternative(alternativeIndex)}
               type="radio"
             />
             {alternative}
           </Widget.Topic>
           )
         })}
-        <Button type="submit">Cofirmar</Button>
-      </form>
+        <Button type="submit" disabled={!hasSelectedAlternatve}>Cofirmar</Button>
+        {isCorrect && isFormSubmited ? <p>Você acertou 😃</p> : null}
+        {!isCorrect && isFormSubmited ? <p>Você errou 😢</p> : null}
+      </AlternativesForm>
     </Widget.Content>
   </Widget>
   )
@@ -107,15 +132,18 @@ const screenStates = {
 }
 
 function QuizPage () {
+  const router = useRouter()
+  const name = router.query.name
   const [screenState, setScreenState] = useState(screenStates.LOADING)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const question = projectDb.questions[currentQuestion]
   const totalQuestions = projectDb.questions.length
+  const [results, setResults] = useState(0)
 
   useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ)
-    }, 1 * 1000)
+    }, 1 * 1500)
   }, [])
 
   function handleSubmit () {
@@ -124,6 +152,10 @@ function QuizPage () {
     } else {
       setScreenState(screenStates.RESULT)
     }
+  }
+
+  function addPoint () {
+    setResults(results + 1)
   }
 
   return (
@@ -135,13 +167,14 @@ function QuizPage () {
               question={question}
               totalQuestions={totalQuestions}
               questionIndex={currentQuestion}
-              handleSubmit={handleSubmit}>
+              handleSubmit={handleSubmit}
+              addResults={addPoint}>
             </QuestionWidget>
           )}
 
           {screenState === screenStates.LOADING && <LoadingWidget />}
 
-          {screenState === screenStates.RESULT && <Result totalQuestions={totalQuestions}/>}
+          {screenState === screenStates.RESULT && <Result totalQuestions={totalQuestions} result={results} name={name}/>}
         </QuizContainer>
         <GitHubCorner></GitHubCorner>
         <Slide in={true} direction="left" timeout={1000}>
