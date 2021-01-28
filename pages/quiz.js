@@ -13,6 +13,7 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import Button from '../src/components/Button'
 
 import avengersImg from '../assets/avengersGroup.png'
+import loadingGif from '../assets/loading.gif'
 
 const QuizImg = styled.img`
   position: fixed;
@@ -32,7 +33,7 @@ function LoadingWidget () {
         <h1>Carregando...</h1>
       </Widget.Header>
       <Widget.Content>
-        <p>Aguarde enquanto as questões são carregadas</p>
+        <img src="https://media.giphy.com/media/5AtXMjjrTMwvK/giphy.gif" alt="Imagem de Carregamento" style={{ marginLeft: '80px', height: '120px'}}/>
       </Widget.Content>
     </Widget>
   )

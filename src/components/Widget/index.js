@@ -27,6 +27,7 @@ const Widget = styled.div`
 `
 
 Widget.Content = styled.div`
+  align-items: center;
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
