@@ -32,7 +32,7 @@ function LoadingWidget () {
         <h1>Carregando...</h1>
       </Widget.Header>
       <Widget.Content>
-        oi
+        <p>Aguarde enquanto as questões são carregadas</p>
       </Widget.Content>
     </Widget>
   )
