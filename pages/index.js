@@ -3,11 +3,14 @@ import Slide from '@material-ui/core/Slide'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
+import QuizContainer from '../src/components/QuizContainer'
 import Widget from '../src/components/Widget'
 import DivBackground from '../src/components/QuizBackground'
 import QuizLogo from '../src/components/QuizLogo'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Input from '../src/components/Input'
+import Button from '../src/components/Button'
 
 import avengersImg from '../assets/avengers.png'
 
@@ -19,48 +22,11 @@ const QuizImg = styled.img`
   height: (40vh, 200px);
 `
 
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`
-
 const Form = styled.form`
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
-const Button = styled.button`
-  min-width: 250px;
-  background-color: ${({ theme }) => {
-    return theme.colors.secondary
-  }};
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-weight: bold;
-`
-const Input = styled.input`
-  border: 1px solid ${({ theme }) => { return theme.colors.primary }};
-  border-radius: 5px;
-  padding: 10px;
-  min-width: 250px;
-  background: none;
-  color: #fff;
-
-  ::placeholder{
-    color: #fff;
-  }
 `
 
 export default function Home () {
@@ -83,7 +49,7 @@ export default function Home () {
             <Widget.Content>
               <p>Está pronto para testar seu conhecimento sobre o melhor filme da era marvel? Prepara o Mjölnir e vamo lá</p>
               <Form onSubmit={handleSubmit}>
-                <Input placeholder="Diz seu nome para jogar :)" onChange={event => setName(event.target.value)}></Input>
+                <Input placeholder="Diz seu nome para jogar :)" onChange={event => setName(event.target.value)} name="NomedoUsuário"></Input>
                 <Button type="submit" disabled={name.length === 0}> Bora Jogar {name} ?</Button>
               </Form>
             </Widget.Content>
