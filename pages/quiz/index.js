@@ -15,7 +15,7 @@ import Button from '../../src/components/Button'
 import AlternativesForm from '../../src/components/AlternativesForm'
 import BackLinkArrow from '../../src/components/BackLinkArrow'
 
-import avengersImg from '../assets/avengersGroup.png'
+import avengersImg from '../../assets/avengersGroup.png'
 
 const QuizImg = styled.img`
   position: fixed;
