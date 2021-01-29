@@ -11,3 +11,5 @@ Esse quiz foi desenvolvido durante a Imersão React da Alura com Next JS. O tema
 - Server Side Rendering
 
 - Lambda Functions
+
+- Animações com Framer Motion
