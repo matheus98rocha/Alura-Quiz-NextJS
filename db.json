@@ -1,6 +1,6 @@
 {
     "title": "Avengers Endgame",
-    "bg": "https://github.com/Fernanda-Kipper/Alura-Quiz-NextJS/blob/main/assets/background.png",
+    "bg": "https://raw.githubusercontent.com/Fernanda-Kipper/Alura-Quiz-NextJS/main/assets/background.png",
     "description": "Está pronto para testar seu conhecimento sobre o melhor filme da era marvel? Prepara o Mjölnir e vamo lá",
     "questions": [
       {
