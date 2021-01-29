@@ -4,15 +4,16 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import Slide from '@material-ui/core/Slide'
 
-import projectDb from '../db.json'
+import projectDb from '../../db.json'
 
-import DivBackground from '../src/components/QuizBackground'
-import QuizContainer from '../src/components/QuizContainer'
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import GitHubCorner from '../src/components/GitHubCorner'
-import Button from '../src/components/Button'
-import AlternativesForm from '../src/components/AlternativesForm'
+import DivBackground from '../../src/components/QuizBackground'
+import QuizContainer from '../../src/components/QuizContainer'
+import Widget from '../../src/components/Widget'
+import QuizLogo from '../../src/components/QuizLogo'
+import GitHubCorner from '../../src/components/GitHubCorner'
+import Button from '../../src/components/Button'
+import AlternativesForm from '../../src/components/AlternativesForm'
+import BackLinkArrow from '../../src/components/BackLinkArrow'
 
 import avengersImg from '../assets/avengersGroup.png'
 
@@ -44,6 +45,7 @@ function Result ({ totalQuestions, result, name }) {
   return (
     <Widget>
     <Widget.Header>
+      <BackLinkArrow href="/"/>
       <h1>Você acertou {result} de {totalQuestions}</h1>
     </Widget.Header>
     <Widget.Content>

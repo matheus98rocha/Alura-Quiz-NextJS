@@ -40,18 +40,9 @@
       }
     ],
     "external": [
-      {
-        "url": "https://aluraquiz.felipebeskow.vercel.app/",
-        "name": "Steven Universe do Felipe"
-      },
-      {
-        "url": "https://flash-quiz-next.davidlpc1.vercel.app/",
-        "name": "Flash Quiz do Davi"
-      },
-      {
-        "url": "https://aluraquiz-base-git-main.alura-challenges.vercel.app/",
-        "name": "Quiz de CSS da Alura"
-      }
+      "https://aluraquiz.felipebeskow.vercel.app/",
+      "https://flash-quiz-next.davidlpc1.vercel.app/",
+      "https://aluraquiz-base-git-main.alura-challenges.vercel.app/"
     ],
     "theme": {
       "colors": {

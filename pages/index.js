@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Slide from '@material-ui/core/Slide'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import projectDb from '../db.json'
 
@@ -13,6 +14,7 @@ import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
+import Link from '../src/components/Link'
 
 import avengersImg from '../assets/avengers.png'
 
@@ -44,7 +46,15 @@ export default function Home () {
     <DivBackground>
         <QuizContainer>
           <QuizLogo/>
-          <Widget>
+          <Widget
+          as={motion.section}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show"
+          transition={{ delay: 0, duration: 0.5 }}>
             <Widget.Header>
               <h1>{projectDb.title}</h1>
             </Widget.Header>
@@ -56,13 +66,25 @@ export default function Home () {
               </Form>
             </Widget.Content>
           </Widget>
-          <Widget>
+          <Widget
+          as={motion.section}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show"
+          transition={{ delay: 0.5, duration: 0.5 }}>
             <Widget.Header>
               <h1>Quizes da Galera</h1>
             </Widget.Header>
             <Widget.Content>
               {projectDb.external.map(quiz => {
-                return (<Widget.Topic key={quiz.url} href={quiz.url}>{quiz.name}</Widget.Topic>)
+                const [projectName, githubName] = quiz.replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.')
+                return (<Widget.Topic as={Link} key={quiz} href={`/quiz/${projectName}___${githubName}`}>{projectName}/{githubName}</Widget.Topic>)
               })}
             </Widget.Content>
           </Widget>
