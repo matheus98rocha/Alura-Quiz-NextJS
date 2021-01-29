@@ -33,9 +33,9 @@ function Result ({ totalQuestions, result }) {
     <Widget.Content>
     {result > totalQuestions / 2
       ? (
-      <h3>Parábens! Você é um bom conhecedor do universo Marvel 🐱‍🏍</h3>
+      <h3>Parábens! Você é um bom conhecedor do assunto 😁</h3>
         )
-      : <h3>Putss! Prepara uma pipoca por que você vai ter que assistir o filme de novo 🍿</h3>
+      : <h3>Putss! Acho que você precisa dar uma estudada haha </h3>
     }
     </Widget.Content>
   </Widget>
