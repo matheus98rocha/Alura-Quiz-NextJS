@@ -38,12 +38,48 @@
           "Por que Thanos, já sabendo o que estava por vir, tinha usado as joias para fingir sua morte",
           "Por que não foi Thanos quem estalou os dedos para matar metade dos seres vivos"
         ]
+      },
+      {
+        "image": "https://giffiles.alphacoders.com/209/209934.gif",
+        "title": "O que acontece após Tony Stark pegar todas as jóias e dar o estalo?",
+        "description": "As jóias sempre trazem consequências do seu uso",
+        "answer": 1,
+        "alternatives": [
+          "Todos que haviam sumido após o estalo do thanos retornam e Tony fica bem depois",
+          "Todos que haviam sumido após o estalo do thanos retornam e Tony infelizmente não aguenta o impacto das jóias",
+          "Ninguém volta mas Tony não aguenta o impacto das jóias",
+          "Nada acontece pois as jóias eram falsas"
+        ]
+      },
+      {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3109a63d-7a07-43b4-87f4-4552ee5c0926/db5wasz-53ee22c6-b3db-4d4c-97da-4cc0d6978344.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzEwOWE2M2QtN2EwNy00M2I0LTg3ZjQtNDU1MmVlNWMwOTI2XC9kYjV3YXN6LTUzZWUyMmM2LWIzZGItNGQ0Yy05N2RhLTRjYzBkNjk3ODM0NC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.BNKlVJ5ycX2Tq0jHguwzgx_I6RwurxxU9KBlD3ubtgM",
+        "title": "Quais dos Vingadores, além de Thor, consegue levantar o mjolnir ?",
+        "description": "Thor já havia contado na Era de Ultron que apenas quem fosse digno conseguiria levantar o martelo",
+        "answer": 3,
+        "alternatives": [
+          "Capitã Marvel",
+          "Viúva Negra",
+          "Homem de Ferro",
+          "Capitão América"
+        ]
+      },
+      {
+        "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/KSFVJH7VVZBDZJL3EXK5WUHUUI.gif",
+        "title": "Com as Jóias destruídas, qual foi a solução encontrada pelos Vingadores para reverter o estalo de Thanos?",
+        "description": "Após o estalo Thanos  utilizou as Jóias para destruí-las, para ninguém reverter o que fora feito",
+        "answer": 0,
+        "alternatives": [
+          "Voltar no tempo e recuperar as jóias",
+          "Fazer novas jóias",
+          "Ir ao planeta da Capitã Marvel e pedir ajuda aos celestiais",
+          "Não encontraram uma solução"
+        ]
       }
     ],
     "external": [
       "https://breaking-bad-quiz.eliasnepo.vercel.app/",
       "https://flash-quiz-next.davidlpc1.vercel.app/",
-      "https://aluraquiz-base-git-main.alura-challenges.vercel.app/",
+      "https://lolzinquiz-git-main.bernardooficial.vercel.app/",
       "https://quiz-imersao-react.olucasalves.vercel.app/"
     ],
     "theme": {
