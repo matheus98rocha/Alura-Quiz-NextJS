@@ -75,7 +75,7 @@ function QuestionWidget ({
   return (
     <Widget>
     <Widget.Header>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex' }}>
         <BackLinkArrow href="/"/>
         <h1>Pergunta {questionIndex + 1} de {totalQuestions}</h1>
       </div>
