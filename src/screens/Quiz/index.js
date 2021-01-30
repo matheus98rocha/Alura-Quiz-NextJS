@@ -10,7 +10,7 @@ import Button from '../../components/Button'
 import AlternativesForm from '../../components/AlternativesForm'
 import BackLinkArrow from '../../components/BackLinkArrow'
 
-import loadingGif from '../../assets/loading.gif'
+import loadingGif from '../../../assets/loading.gif'
 
 function LoadingWidget () {
   return (
