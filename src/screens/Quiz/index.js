@@ -10,6 +10,8 @@ import Button from '../../components/Button'
 import AlternativesForm from '../../components/AlternativesForm'
 import BackLinkArrow from '../../components/BackLinkArrow'
 
+import loadingGif from '../../assets/loading.gif'
+
 function LoadingWidget () {
   return (
     <Widget>
@@ -17,7 +19,7 @@ function LoadingWidget () {
         <h1>Carregando...</h1>
       </Widget.Header>
       <Widget.Content>
-        <img src="https://media.giphy.com/media/5AtXMjjrTMwvK/giphy.gif" alt="Imagem de Carregamento" style={{ marginLeft: '80px', height: '120px' }}/>
+        <img src={loadingGif} alt="Imagem de Carregamento" style={{ marginLeft: '80px', height: '120px' }}/>
       </Widget.Content>
     </Widget>
   )
@@ -56,7 +58,10 @@ function QuestionWidget ({
   return (
     <Widget>
     <Widget.Header>
-      <h1>Pergunta {questionIndex + 1} de {totalQuestions}</h1>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <BackLinkArrow href="/"/>
+        <h1>Pergunta {questionIndex + 1} de {totalQuestions}</h1>
+      </div>
       <img
       alt="Foto da questão"
       src={question.image}
