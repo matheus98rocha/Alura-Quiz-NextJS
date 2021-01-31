@@ -6,7 +6,7 @@
     <p>Esse quiz foi desenvolvido durante a Imersão React da Alura com Next JS. O tema do quiz era de livre escolha, nesse caso, o filme Avengers Endgame. Além disso, escolhi também as cores, background e imagens.</p>
     <img src="/assets/landingPage.gif" width="400px" height="300px">
     <h2>Deploy 📲</h2>
-    <p>Realizamos durante a Imersão o deploy do projeto - completamente funcional - na Vercel</p>
+    <p>Realizamos o deploy do projeto - completamente funcional - na Vercel</p>
     <p>Sinta-se desafiado em responder as perguntas 🧐🧐</p>
 </main>
 
