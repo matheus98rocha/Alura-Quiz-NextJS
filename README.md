@@ -8,10 +8,11 @@
     <h2>Deploy 📲</h2>
     <p>Realizamos durante a Imersão o deploy do projeto - completamente funcional - na Vercel</p>
     <p>Sinta-se desafiado em responder as perguntas 🧐🧐</p>
-    [Clique aqui](https://alura-quiz-avengers.fernanda-kipper.vercel.app/)
 </main>
 
-## :information_source: O que aprendemos?
+[Clique aqui](https://alura-quiz-avengers.fernanda-kipper.vercel.app/)
+
+## 🔎 O que vimos durante a Imersão 🔎
 
 - Styled Components
 
