@@ -13,3 +13,5 @@ Esse quiz foi desenvolvido durante a Imersão React da Alura com Next JS. O tema
 - Lambda Functions
 
 - Animações com Framer Motion
+
+- Padronização do código com Eslint
