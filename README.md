@@ -1,6 +1,5 @@
 <header style="display:flex; align-items'center'">
-    <h1>Alura Quiz - Avengers Endgame</h1>
-    <img src="/assets/avengersLogo.svg" width="40px" height="40px">
+    <h1>Alura Quiz - Avengers Endgame <img src="/assets/avengersLogo.svg" width="40px" height="40px"></h1>
 </header>
 
 <main>
