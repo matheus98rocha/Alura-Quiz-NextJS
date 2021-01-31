@@ -29,8 +29,10 @@ function Result ({ totalQuestions, result }) {
   return (
     <Widget>
     <Widget.Header>
-      <BackLinkArrow href="/"/>
-      <h1>Você acertou {result} de {totalQuestions}</h1>
+    <div style={{ display: 'flex' }}>
+        <BackLinkArrow href="/"/>
+        <h1>Você acertou {result} de {totalQuestions}</h1>
+    </div>
     </Widget.Header>
     <Widget.Content>
     {result > totalQuestions / 2

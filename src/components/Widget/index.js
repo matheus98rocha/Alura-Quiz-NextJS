@@ -70,5 +70,8 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+  :hover{
+    transform: translateX(20px)
+  }
 `
 export default Widget
