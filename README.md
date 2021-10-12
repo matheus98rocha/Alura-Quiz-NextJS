@@ -1,16 +1,14 @@
 <header>
-    <h1>Alura Quiz - Avengers Endgame <img src="/assets/avengersLogo.svg" width="40px" height="40px"></h1>
+    <h1>Alura Quiz -League Of legends <img src="/assets/avengersLogo.svg" width="40px" height="40px"></h1>
 </header>
 
 Esse quiz foi desenvolvido durante a Imersão React da Alura com Next JS. O tema do quiz era de livre escolha, poderíamos utilizar o Layout base ou escolher nosso background e paleta de cores - escolhi a segunda opção. Construímos o quiz desde o zero, passando por vários conceitos importante do mundo React e Next JS.
-
- <img src="/assets/landingPage.gif" width="1000px" height="500px">
  
  ## Deploy 📲
 Realizamos o deploy do projeto - completamente funcional - na Vercel. 
 Sinta-se desafiado em responder as perguntas 🧐🧐
 
-[Clique aqui](https://alura-quiz-avengers.fernanda-kipper.vercel.app/)
+[Clique aqui](https://league-of-quiz.vercel.app/)
 
 ## 🔎 O que vimos durante a Imersão 🔎
 
